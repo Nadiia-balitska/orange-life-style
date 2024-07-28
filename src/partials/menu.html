@@ -1,0 +1,52 @@
+<div class="burger-menu">
+  <picture>
+    <source
+      srcset="
+        ./img/mob-menu/mob-menu@1x.avif 1x,
+        ./img/mob-menu/mob-menu@2x.avif 2x
+      "
+      media="(max-width: 767px)"
+      type="image/avif"
+    />
+    <source
+      srcset="
+        ./img/tab-menu/tab-menu@1x.avif 1x,
+        ./img/tab-menu/tab-menu@2x.avif 2x
+      "
+      media="(min-width: 768px)"
+      type="image/avif"
+    />
+    <img
+      src="./img/mob-menu/mob-menu@1x.avif"
+      alt="citrus mics"
+      class="bgr-img"
+      type="image/avif"
+    />
+  </picture>
+  <div class="box-menu">
+    <button class="btn-exit" aria-label="button for exit menu">
+      <svg class="swg-exit" width="28" height="28">
+        <use href="./img/icons/icons.svg#icon-exit"></use>
+      </svg>
+    </button>
+    <nav class="nav-menu">
+      <ul class="list-menu">
+        <li class="items-menu">
+          <a href="#steps" class="caption-menu activ">How It Works</a>
+        </li>
+        <li class="items-menu">
+          <a href="#section-fruits" class="caption-menu">Fruits</a>
+        </li>
+        <li class="items-menu">
+          <a href="#reviews" class="caption-menu">Reviews</a>
+        </li>
+        <li class="items-menu">
+          <a href="#order" class="caption-menu">Order</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="address">
+      <a href="tel:+380684439426" class="contact">+380 (68) 443-94-26</a>
+    </address>
+  </div>
+</div>

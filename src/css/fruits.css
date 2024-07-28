@@ -1,0 +1,189 @@
+/* #region Title*/
+@media only screen and (min-width: 768px) {
+  .par {
+    max-width: 495px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .par {
+    max-width: 509px;
+  }
+}
+/* #endregion*/
+
+/* #region Fruit card*/
+.fruits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-list {
+    gap: 32px 23px;
+  }
+}
+
+.fruits-item {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 335px;
+  height: 334px;
+  padding: 40px;
+  border: 1px solid rgba(15, 15, 15, 0.15);
+  border-radius: 8px;
+
+  transition: 250ms ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-item {
+    width: 340px;
+    height: 390px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-item {
+    width: 390px;
+    height: 390px;
+  }
+}
+
+.fruits-item:hover {
+  background-color: #ff7f08;
+}
+
+.fruits-item:hover .fruits-item-name,
+.fruits-item:hover .fruits-item-type {
+  color: #fcfcfc;
+}
+
+.fruits-item:hover .fruits-item-btn {
+  background-color: #fcfcfc;
+  color: #0f0f0f;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.fruits-name-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fruits-item-img {
+  margin: 0 auto;
+  margin-bottom: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-item-img {
+    width: 216px;
+    margin-top: 8px;
+    margin-bottom: 22px;
+  }
+}
+
+.fruits-item-name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 6px;
+  color: #0f0f0f;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-item-name {
+    font-size: 24px;
+  }
+}
+
+.fruits-item-type {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #777;
+}
+
+@media only screen and (min-width: 768px) {
+  .fruits-item-type {
+    font-size: 16px;
+  }
+}
+
+.fruits-item-btn {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  text-align: center;
+
+  border-radius: 8px;
+  padding: 8px 6px;
+  min-width: 93px;
+  height: 34px;
+
+  border: 0;
+  border-color: transparent;
+
+  color: #fcfcfc;
+  background: #ff7f08;
+
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+/* #endregion */
+
+/* #region Show button*/
+.show-btn-wrapp {
+  display: flex;
+}
+
+.ftuits-show-btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.04em;
+  color: #ff7f08;
+
+  border: 1px solid #ff7f08;
+  border-radius: 16px;
+
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 14px 30px;
+  width: 132px;
+  height: 46px;
+
+  background-color: transparent;
+  transition: 250ms ease-in;
+}
+
+.ftuits-show-btn:hover {
+  background-color: #ff7f08;
+  color: #fcfcfc;
+}
+/* #endregion*/
+
+/* #region Visibility*/
+@media only screen and (min-width: 768px) {
+  .mob {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .tablet {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .desk {
+    display: none;
+  }
+}
+/* #endregion*/

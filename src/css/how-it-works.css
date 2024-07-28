@@ -1,0 +1,148 @@
+.section-hiw .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.box-hiw {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+}
+.box-hiw-svg {
+  padding: 60px 20px;
+}
+.box-hiw-svg {
+  padding: 60px 20px;
+  border-radius: 16px;
+  background: #ff7f08;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-image: url(../img/block-steps-bg/steps-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hiw-ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  justify-content: center;
+  counter-reset: section;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.hiw-list {
+  width: 295px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-right: 13px;
+  height: calc((100% - 64px) / 3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: #fcfcfc;
+}
+.hiw-list::before {
+  counter-increment: section;
+  content: '0' counter(section);
+  border-radius: 200px;
+  padding: 13px 12px;
+  width: 46px;
+  height: 46px;
+  background: #fcfcfc;
+  color: #ff7f08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.counter {
+  width: 18px;
+  height: 20px;
+}
+.hiw-img {
+  border-radius: 16px;
+  width: 335px;
+  height: 330px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-hiw .container {
+    max-width: 768px;
+  }
+  .box-hiw {
+    column-gap: 16px;
+  }
+  .box-hiw-svg {
+    padding: 72px 195px 77px 80px;
+    background-position: 7px -120px;
+    margin-bottom: 16px;
+  }
+  .hiw-list {
+    font-size: 20px;
+    width: 429px;
+  }
+
+  .counter {
+    width: 24px;
+    height: 28px;
+  }
+  .hiw-list::before {
+    padding: 15px;
+    width: 58px;
+    height: 58px;
+  }
+  .hiw-img {
+    width: 704px;
+    height: 382px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .hiw-br {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-hiw .container {
+    max-width: 1280px;
+  }
+  .box-hiw {
+    column-gap: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: #ff7f08;
+    border-radius: 16px;
+    width: 1216px;
+    height: 382px;
+  }
+  .box-hiw-svg {
+    background-image: url(../img/block-steps-bg/steps-bg-desk.svg);
+    background-position: -30px -70px;
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 72px 80px;
+  }
+
+  .hiw-img {
+    width: 627px;
+    height: 382px;
+  }
+  .section-hiw .h3-title {
+    width: 475px;
+  }
+  .section-hiw .par {
+    max-width: none;
+  }
+}
